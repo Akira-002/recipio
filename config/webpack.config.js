@@ -40,7 +40,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif)$/,
-        include: path.resolve(__dirname, '../client/images'),
+        include: path.resolve(__dirname, '../client/Images'),
         loader: 'url-loader',
         options: {
           outputPath: '../dist/images',

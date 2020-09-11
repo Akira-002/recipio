@@ -1,0 +1,129 @@
+.dishTitleField {
+    text-align: center;
+    .dishTitle {
+        margin: 20px;
+        min-width: 280px;
+    }
+}
+
+.two-row-setting {
+    display: flex;
+    justify-content: center;
+}
+
+
+.addPaneSetting{
+    display: flex;
+    justify-content: center;
+
+    .foodstuffPane {
+        text-align: center;
+    }
+    .seasoningPane {
+        text-align: center;
+    }
+    .selectorPane {
+        display: flex;
+        justify-content: center;
+    }
+    .addMassSelector {
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color:#454545b8;
+    }
+    .seasoningSelector {
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .MuiSelect-select {
+            min-width: 160px !important;
+            width: 200px;
+        }
+    }
+    .amountSelector {
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .amountField {
+            min-width: 100px !important;
+        }
+        .MuiSelect-select {
+            margin-top: 16px;
+            min-width: 50px !important;
+            margin-left: 50px;
+        }
+    }
+}
+
+.methodSentence {
+    text-align: center;
+    margin-top: 20px;
+    .methodSentenceWith {
+        width: 500px;
+    }
+    .methodSentenceAddButton {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.addImgButtonSetting {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+
+    .addImgButton {
+        width: 500px;
+        border: 0.3px #000000;
+        border-style: dotted;
+        border-radius: 3px;
+    }
+}
+
+.listPaneSetting {
+    display: flex;
+    justify-content: center;
+
+    .listPane {
+        text-align: center;
+        width: 260px;
+        padding-top: 5px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        background-color: #6f6f6f46;
+    }
+    .listPaneTitle {
+        margin: 10px;
+    }
+}
+
+.listMethodPaneSetting {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    .listMethodPane {
+        width: 520px;
+        padding-top: 5px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        background-color: #6f6f6f46;
+        .listPaneTitle {
+            text-align: center;
+            margin: 10px;
+        }
+    }
+}

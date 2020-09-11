@@ -1,5 +1,17 @@
+@import './addrecipe';
+@import './recipelist';
+@import './sidemenue';
+
 html,
 body {
     margin: 0;
     height: 100%;
+}
+
+.title-text {
+    text-align: center;
+    margin-top: 20px;
+    padding-right: 30px;
+    font-size: 25px;
+    font-weight: 800;
 }

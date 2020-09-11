@@ -1,0 +1,51 @@
+.showListPane {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cardSetting {
+    max-width: 320px;
+    min-width: 320px;
+    width: 320px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cardMediaImg {
+    height: 200px;
+    padding-top: '50px';
+}
+
+.secondrySetting {
+    min-height: 50px;
+    height: 50px;
+}
+
+.sentenceListPane {
+    display: flex;
+}
+
+.methodSentenceTextPane {
+    min-height: 300px;
+    height: 400px;
+}
+
+.methodSentenceNumPane {
+    width: 30px;
+    text-align: left;
+
+    .methodSentenceNum {
+        margin-bottom: 10px;
+    }
+}
+
+.methodSentenceTextPane {
+    text-align: left;
+
+    .methodSentenceText {
+        margin-bottom: 10px;
+    }
+}
+
+

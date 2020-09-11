@@ -1,0 +1,29 @@
+.sideMenuePane {
+    height: 50px;
+    text-align: center !important;
+
+    .sideMenueSetting {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: solid 0.3px #dadada;
+        border-radius: 3px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #ababab;
+        background-color: #eaeaeac4;
+    }
+
+    .sideAddOptions {
+        margin-left: 15px;
+    }
+
+    .sideAddButton {
+        margin-top: 10px;
+    }
+}
+
+.drawerIconSetting {
+    text-align: right;
+}
