@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -89,7 +89,6 @@ export default function SideMenue() {
           edge="start"
           className={clsx(classes.menuButton, open && classes.hide)}
         >
-          {/* <Button>Show Side Menue</Button> */}
           <div className="sideMenueSetting">Side Menue</div>
         </IconButton>
       </div>
@@ -125,23 +124,16 @@ export default function SideMenue() {
             </ListItem>
           </Link>
         </List>
+        <Link to="/OptionsAndUnitsList">
+            <ListItem button key={'Show options/units'}>
+              <ListItemIcon>
+                <ListIcon/>
+              </ListItemIcon>
+              <ListItemText primary={'Show options/units'} />
+            </ListItem>
+          </Link>
 
         <Divider/>
-{/*
-        <ListItem button key={'Add foodstuff options'}>
-          <ListItemIcon>
-            <InboxIcon />
-          </ListItemIcon>
-          <ListItemText primary={'Add foodstuff options'} />
-        </ListItem>
-        <ListItem button key={'Add seasoning options'}>
-          <ListItemIcon>
-            <InboxIcon />
-          </ListItemIcon>
-          <ListItemText primary={'Add seasoning options'} />
-        </ListItem>
-
- */}
         <div className="sideAddOptions">
           <Grid container spacing={2} alignItems="flex-end">
             <Grid item>
@@ -162,7 +154,7 @@ export default function SideMenue() {
         </div>
         <div className="sideAddButton">
           <Button>
-              Add option
+            Add option
           </Button>
         </div>
 

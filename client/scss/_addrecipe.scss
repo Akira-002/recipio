@@ -137,3 +137,47 @@
         margin-top: 5px;
     }
 }
+
+.optionsListSetting {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    .foodstuffoptionsListPane {
+        // margin-left: 30px;
+        margin-right: 30px;
+        max-width: 150px;
+    }
+    .seasoningOptionsListPane {
+        margin-left: 30px;
+        margin-right: 30px;
+        max-width: 150px;
+    }
+}
+.optionsAndUnitsListTitle {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.unitsListSetting {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    .foodstuffUnitsListPane {
+        // margin-left: 30px;
+        margin-right: 50px;
+        max-width: 150px;
+    }
+    .seasoningUnitsListPane {
+        margin-left: 30px;
+        margin-right: 30px;
+        max-width: 150px;
+    }
+}
+
+.checkButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 30px;
+}

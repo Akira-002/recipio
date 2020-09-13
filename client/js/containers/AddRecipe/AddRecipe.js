@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { foodstuffs, seasonings, foodstuffUnits, seasoningUnits, } from '../../sample';
-import {  addedFoodstuffs, addedSeasonings, methodsentences } from '../../addingSmaple';
+import { foodstuffs, seasonings, foodstuffUnits, seasoningUnits, } from '../../sample/sample';
+import {  addedFoodstuffs, addedSeasonings, methodsentences } from '../../sample/addingSmaple';
 import ModalMenue from '../SideMenuePane/ModalMenue';
 import defaultMethodImg from '../../../images/jingiss.jpg';
 
@@ -83,6 +83,22 @@ class AddRecipe extends Component {
                         variant="outlined"
                     />
                 </div>
+                <div className="methodSentence">
+                        <TextField
+                            className="methodSentenceWith"
+                            id="standard-full-width"
+                            placeholder="overview of dish"
+                            InputLabelProps={{ shrink: true }}
+                        />
+                        <div>
+                            <Button
+                                className="methodSentenceAddButton"
+                                onClick={this.handleClickAddSeasonings}
+                            >
+                                Add dish overview
+                            </Button>
+                        </div>
+                    </div>
                 <div>
                     <div className="two-row-setting">
                         {/* add pane */}
@@ -179,7 +195,6 @@ class AddRecipe extends Component {
                             >
                                 Add method sentence
                             </Button>
-
                         </div>
                     </div>
                     <div className="modaltest">
@@ -223,6 +238,14 @@ class AddRecipe extends Component {
                 </div>
                 <div className="addListImg">
                     <img className="addListImg" src={defaultMethodImg} alt="ListImg"></img>
+                </div>
+                <div className="addRecipeButtonSetting">
+                    <Button
+                    className="addRecipeButton"
+                        // onClick={this.handleClickAddFoodstuffs}
+                    >
+                        Add recipe
+                    </Button>
                 </div>
             </div>
         )

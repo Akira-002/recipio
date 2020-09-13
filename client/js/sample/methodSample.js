@@ -62,6 +62,28 @@ export const methodalltexts = [
             title: '豚の生姜焼き',
             secondarytext: 'ショウガの汁を加えたタレに漬けた肉を焼いた日本料理。豚肉を基本とするレシピ。'
         },
+        methodFoodstuffs: [
+            {
+                id: 3,
+                foodsthuffName: '鳥もも肉',
+                foodstuffAmount: '1',
+                foodstuffunit: '枚'
+            }
+        ],
+        methodSeasonings: [
+            {
+                id: 1,
+                seasoningName: '砂糖',
+                seasoningAmount: '1',
+                seasoningUnit: '大さじ'
+            },
+            {
+                id: 2,
+                seasoningName: '塩',
+                seasoningAmount: '1',
+                seasoningUnit: '小さじ'
+            }
+        ],
         methodsentences: [
             {
                 id: 1,
@@ -92,6 +114,28 @@ export const methodalltexts = [
             title: '鳥キムチ',
             secondarytext: 'キムチと鶏肉を炒めた合わせた料理。'
         },
+        methodFoodstuffs: [
+            {
+                id: 3,
+                foodsthuffName: '鳥もも肉',
+                foodstuffAmount: '1',
+                foodstuffunit: '枚'
+            }
+        ],
+        methodSeasonings: [
+            {
+                id: 1,
+                seasoningName: '砂糖',
+                seasoningAmount: '1',
+                seasoningUnit: '大さじ'
+            },
+            {
+                id: 2,
+                seasoningName: '塩',
+                seasoningAmount: '1',
+                seasoningUnit: '小さじ'
+            }
+        ],
         methodsentences: [
             {
                 id: 5,

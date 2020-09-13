@@ -5,9 +5,9 @@ const Op = db.Sequelize.Op;
 
 const util = new Util();
 
-class ProductController {
+class RecipeController {
 
-  static async getAllProducts(req, res) {
+  static async getAllRecipes(req, res) {
     try {
       const name = req.query.name;
       var condition = name ? { name: { [Op.iLike]: `%${name}%` } } : null;
@@ -105,4 +105,4 @@ class ProductController {
 }
 
 
-export default ProductController;
+export default RecipeController;

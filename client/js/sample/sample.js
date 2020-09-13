@@ -25,6 +25,10 @@ export const foodstuffs = [
     {
         id: 3,
         text: '豚肩ロース'
+    },
+    {
+        id: 4,
+        text: '玉ねぎ'
     }
 ];
 

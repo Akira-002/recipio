@@ -1,5 +1,5 @@
 import React from 'react';
-import { methodalltexts } from '../../methodSample';
+import { methodalltexts } from '../../sample/methodSample';
 
 // import { makeStyles } from '@material-ui/core/styles';
 // import clsx from 'clsx';
@@ -27,6 +27,42 @@ export const SentenseList = ({methodsentences}) => {
                         <div>
                             <span>{methodsentence.num}. </span>
                             <span>{methodsentence.sentence}</span>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    )
+}
+
+export const MethodFoodstuffList = ({methodFoodstuffs}) => {
+    return(
+        <div>
+            <div>
+                {methodFoodstuffs.map((methodFoodstuff) => (
+                    <div key={methodFoodstuff.id}>
+                        <div>
+                            <span>{methodFoodstuff.foodsthuffName} :  </span>
+                            <span>{methodFoodstuff.foodstuffAmount} </span>
+                            <span>{methodFoodstuff.foodstuffunit}</span>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    )
+}
+
+export const MethodSeasoningList = ({methodSeasonings}) => {
+    return(
+        <div>
+            <div>
+                {methodSeasonings.map((methodSeasoning) => (
+                    <div key={methodSeasoning.id}>
+                        <div>
+                            <span>{methodSeasoning.seasoningName} :  </span>
+                            <span>{methodSeasoning.seasoningAmount} </span>
+                            <span>{methodSeasoning.seasoningUnit}</span>
                         </div>
                     </div>
                 ))}
@@ -67,13 +103,22 @@ export default function RecipeReviewCard() {
                         aria-expanded={expanded}
                         aria-label="show more"
                         >
-                        <ExpandMoreIcon />
+                            <ExpandMoreIcon />
                         </IconButton>
                     </CardActions>
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
-                        <Typography paragraph>Method</Typography>
-                            <SentenseList methodsentences={methodalltext.methodsentences}/>
+                        <div className="methodFoodAndSeasoningText">Foodstuffs and Seasonings</div>
+                            <div className="methodFoodAndSeasoningList">
+                                <div className="Foodstuffslist">
+                                    <MethodFoodstuffList methodFoodstuffs={methodalltext.methodFoodstuffs}/>
+                                </div>
+                                <div className="Seasoningslist">
+                                    <MethodSeasoningList methodSeasonings={methodalltext.methodSeasonings}/>
+                                </div>
+                            </div>
+                            <Typography paragraph>Method</Typography>
+                                <SentenseList methodsentences={methodalltext.methodsentences}/>
                         </CardContent>
                     </Collapse>
                 </Card>
