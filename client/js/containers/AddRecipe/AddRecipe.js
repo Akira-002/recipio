@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { foodstuffs, seasonings, foodstuffUnits, seasoningUnits, } from '../../sample';
 import {  addedFoodstuffs, addedSeasonings, methodsentences } from '../../addingSmaple';
+import ModalMenue from '../SideMenuePane/ModalMenue';
+import defaultMethodImg from '../../../images/jingiss.jpg';
 
 //material-ui objects
 import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import ImageIcon from '@material-ui/icons/Image';
 
 
 export const MassSelector = ({seasoningsAndAmounts, onChange, value}) => {
@@ -182,12 +182,8 @@ class AddRecipe extends Component {
 
                         </div>
                     </div>
-                    <div className="addImgButtonSetting">
-                        <div className="addImgButton">
-                            <IconButton aria-label="addimg">
-                                <ImageIcon />
-                            </IconButton>
-                        </div>
+                    <div className="modaltest">
+                        <ModalMenue/>
                     </div>
                 </div>
 
@@ -224,6 +220,9 @@ class AddRecipe extends Component {
                             </div>
                         ))}
                     </div>
+                </div>
+                <div className="addListImg">
+                    <img className="addListImg" src={defaultMethodImg} alt="ListImg"></img>
                 </div>
             </div>
         )

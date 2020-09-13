@@ -1,6 +1,10 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
+import CropSys from '../CropImg/CropSys';
+
+import IconButton from '@material-ui/core/IconButton';
+import ImageIcon from '@material-ui/icons/Image';
+
 
 function rand() {
   return Math.round(Math.random() * 20) - 10;
@@ -18,19 +22,7 @@ function getModalStyle() {
 }
 
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    position: 'absolute',
-    width: 400,
-    backgroundColor: theme.palette.background.paper,
-    border: '2px solid #000',
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
-  },
-}));
-
 export default function ModalMenue() {
-  const classes = useStyles();
   // getModalStyle is not a pure function, we roll the style only on the first render
   const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = React.useState(false);
@@ -44,20 +36,23 @@ export default function ModalMenue() {
   };
 
   const body = (
-    <div style={modalStyle} className={classes.paper}>
-      <h2 id="simple-modal-title">Text in a modal</h2>
-      <p id="simple-modal-description">
-        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-      </p>
-      <ModalMenue />
+    <div className="modalPaper" style={modalStyle}>
+      <div id="simple-modal-title">
+        <h2>Add picture for recipe</h2>
+      </div>
+      <CropSys/>
     </div>
   );
 
   return (
     <div>
-      <button type="button" onClick={handleOpen}>
-        Open Modal
-      </button>
+      <div className="addImgButtonSetting" type="button" onClick={handleOpen}>
+        <div className="addImgButton">
+            <IconButton aria-label="addimg">
+                <ImageIcon />
+            </IconButton>
+        </div>
+      </div>
       <Modal
         open={open}
         onClose={handleClose}

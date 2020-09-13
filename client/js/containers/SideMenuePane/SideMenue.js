@@ -165,6 +165,32 @@ export default function SideMenue() {
               Add option
           </Button>
         </div>
+
+        <Divider/>
+        <div className="sideAddOptions">
+          <Grid container spacing={2} alignItems="flex-end">
+            <Grid item>
+              <InboxIcon/>
+            </Grid>
+            <Grid item>
+              <TextField label="Add foodstaff unit" />
+            </Grid>
+          </Grid>
+          <Grid container spacing={2} alignItems="flex-end">
+            <Grid item>
+              <InboxIcon/>
+            </Grid>
+            <Grid item>
+              <TextField label="Add seasoning unit" />
+            </Grid>
+          </Grid>
+        </div>
+        <div className="sideAddButton">
+          <Button>
+              Add unit
+          </Button>
+        </div>
+
       </Drawer>
     </div>
   );

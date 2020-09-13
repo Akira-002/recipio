@@ -1,0 +1,78 @@
+.modalPaper {
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    border: solid 0.3px #dadada;
+    border-radius: 3px;
+    background-color: #eaeaea;
+    #simple-modal-title {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.cropInputItems {
+    display: flex;
+    justify-content: center;
+    .resetButtonSetting {
+        font-size: 7px !important;
+        font-weight: 650 !important;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #inputFileSetting {
+        padding-top: 2px;
+    }
+}
+
+
+.cropPaneSetting {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    .cropPane {
+        width: 450px;
+        height: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .reactEasyCrop_Container {
+            width: 450px;
+            height: 300px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 140px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.cropItems {
+    text-align: center;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    .sliderSettingsPosition {
+        display: flex;
+        justify-content: center;
+        .sliderSettings {
+            width: 250px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.showImgButtonSetting {
+    margin-top: 10px !important;
+}
+
+.croppedText {
+    font-weight: 650;
+    margin-right: 20px;
+}
+.cropedAddButtonSetting {
+    font-size: 7px !important;
+    font-weight: 650 !important;
+    margin-left: 20px;
+    margin-right: 10px;
+}

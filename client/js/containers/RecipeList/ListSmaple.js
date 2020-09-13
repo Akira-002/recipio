@@ -46,7 +46,7 @@ export default function ListSample() {
                     />
                     <CardMedia
                         className="cardMediaImg"
-                        image={require('../../../Images/porkjinjer.jpg')}
+                        image={require('../../../images/porkjinjer.jpg')}
                         title={methodalltext.methodtitles.title}
                     />
                     <CardContent className="secondrySetting">

@@ -127,3 +127,13 @@
         }
     }
 }
+
+.addListImg {
+    display: flex;
+    justify-content: center;
+    .addListImg {
+        max-width: 520px;
+        height: 520px;
+        margin-top: 5px;
+    }
+}

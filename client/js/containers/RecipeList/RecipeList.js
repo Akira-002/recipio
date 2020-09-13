@@ -53,7 +53,7 @@ export default function RecipeReviewCard() {
                     />
                     <CardMedia
                         className="cardMediaImg"
-                        image={require('../../../Images/porkjinjer.jpg')}
+                        image={require('../../../images/porkjinjer.jpg')}
                         title={methodalltext.methodtitles.title}
                     />
                     <CardContent className="secondrySetting">
